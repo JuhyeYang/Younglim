@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100; 300; 400; 500; 700; 900&family=Roboto:ital,wght@0,100; 0,300; 0,400; 0,500; 0,700; 0,900; 1,100; 1,300; 1,400; 1,500; 1,700; 1,900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300; 0,400; 0,500; 0,600; 0,700; 0,800; 1,300; 1,400; 1,500; 1,600; 1,700; 1,800&display=swap'); 
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /*===========================================================================
     CSS 초기화
@@ -17,14 +16,13 @@ table thead { background:#f8f8fa; }
 table tr { } 
 table th { font-size:18px; font-weight: bold; padding:12px; text-align: center; } 
 table td { padding:12px; text-align: center; } 
-input,
-select { vertical-align: middle; outline: 0; } 
+input,select { vertical-align: middle; outline: 0; } 
 p { line-height: 1.5; } 
 img { display: block; width: 100%; object-fit: cover; } 
 span { display: inline-block; } 
 label { display: block; font-size: 18px; } 
 button { border: 0; background: inherit; cursor: pointer; font-size:15px; } 
-a { display: block; text-decoration: none; } 
+a { display: inline-block; text-decoration: none; } 
 input[type="text"], input[type="password"], input[type="email"], textarea { border: 1px solid #e1e1e1; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; } 
 input[type="text"], input[type="password"], input[type="email"], input[type="tel"] { border:0; background: inherit; } 
 textarea { resize: none; padding: 14px; font-size: 16px; } 
@@ -37,9 +35,9 @@ textarea { resize: none; padding: 14px; font-size: 16px; }
 .tit { font-weight: 400; } 
 .col-group { display: flex; align-items: center; } 
 .btn-group { text-align: center; } 
-/* .btn-group button { font-size: 14px; font-weight: 400; position: relative; margin: 0 auto; padding: 0; width: 144px; border: 1px solid #d3d3d3; text-align: center; height: 50px; line-height: 50px; }  */
 pre { display: inline-block; white-space: pre-wrap; } 
 .wrap { overflow: hidden; } 
+
 /*===========================================================================
     헤더
 ============================================================================*/
@@ -71,7 +69,6 @@ header .mobile-search { display: none; }
 
 /* 메뉴 드롭다운 */
 header .drop-down-area {display: none; width: 100%; position: absolute; top: 64px; z-index: 10; background: #fff; transition: 0.1s;}
-/* header .drop-area.show {display: block;} */
 header .gnb-group li a { color: #333; font-size: 16px; font-weight: 500; }
 header .product-wrap { display: flex; padding: 16px 0 49px; }
 header .product-wrap a { color: #333; font-weight: 300; font-size: 14px; line-height: 1.42; letter-spacing: -.7px; }
@@ -91,12 +88,13 @@ header .product-wrap .swiper-pagination-bullet { width: 5px; height: 5px; border
 header .product-wrap .swiper-pagination-bullet-active { background: #333; }
 
 /* 서치 드롭다운 */
-header .search-area { background: #fff; display: none; width: 100%;  position: absolute; top: 64px; }
+header .search-area {display: none;  background: #fff; width: 100%; position: absolute; top: 64px; }
 header .search-area .menu-group .container { display: flex; padding-top: 30px; padding-bottom: 114px; }
 header .search-area .menu-group .search-wrap { width: 86%; margin-top: -10px; padding-right: 65px; }
 header .search-area .menu-group .search-txt { width: 14%; padding-right: 20px; font-size: 14px; color: #333; line-height: 1.28; letter-spacing: -.12px; } 
 header .search-area .menu-group .search-bar { padding: 0 50px 16px 0;  border-bottom: 1px solid #707070; }
-header .search-area .menu-group .search-bar .inputfield { font-size: 38px; letter-spacing: -1.48px; line-height: 1.47; font-weight: 400; color: #e0e0e0; }
+header .search-area .menu-group .search-bar .inputfield { font-size: 38px; letter-spacing: -1.48px; line-height: 1.47; font-weight: 300; color: #e0e0e0; }
+header .search-area .menu-group .search-bar .inputfield::placeholder { color: #ddd; }
 header .search-area .menu-group ul { display: flex; margin-top: 14px; }
 header .search-area .menu-group ul .tit { margin-left: 0; font-size: 12px; font-weight: 300; letter-spacing: -.6px; line-height: 1.66; color: #707070; }
 header .search-area .menu-group ul li { margin-left: 12px; font-size: 14px; font-weight: 400; letter-spacing: -.7px;  line-height: 20px;  color: #333;  }
@@ -111,12 +109,12 @@ footer .wrap { background-color: #f6f5f3;  padding: 42px 0 50px;  }
 footer .top-area .container { display: flex; justify-content: space-between; }
 footer .top-area .tit { font-size: 24px; font-weight: 500; letter-spacing: -.92px; color: #707070; }
 footer .top-area .menu-group { display: flex; justify-content: left; }
-footer .top-area .menu-group .menu { margin-left: 106px; }
+footer .top-area .menu-group .menu { margin-left: 106px; display: flex; flex-direction: column; }
 footer .top-area .menu-group a { padding: 8px 0; font-size: 16px; letter-spacing: -.23px; color: #707070; }
+footer .top-area .menu-group a:first-child { padding-top: 0; }
 footer .top-area .menu-group .menu:last-child { width: 100px; margin-left: 106px; }
 footer .top-area .menu-group .menu:last-child a { position: relative; }
 footer .top-area .menu-group .menu:last-child a::after { content: ''; background: url(../images/icon-footer-link.png) no-repeat; transform: translateY(-50%); background-size: 100% auto; width: 16px; height: 16px; position: absolute; top: 50%; right: 0; }
-/* transform: translateY(-50%); background-size: 100% auto; 이부분이 뭘 의미하는지 모르겠어요ㅠ */
 footer .mid-area .container { border-top: 1px solid #ddd; margin-top: 60px; padding-top: 25px; display: flex; justify-content: space-between; }
 footer .mid-area .txt-wrap .brand { font-size: 16px; letter-spacing: -.3px; line-height: 1.37; color: #707070; }
 footer .mid-area .txt-wrap .address { margin-top: 10px; }
@@ -150,8 +148,7 @@ footer .bottom-area .tel { font-size: 14px; font-weight: 500; letter-spacing: -.
     반응형
 ============================================================================*/
 @media(max-width:1240px) {
-    .container { width: 100%; padding: 0 20px; }
-    header .logo-group .gnb-group { display: none; }
+    header { padding: 0 20px; }
 }
 
 @media(max-width:768px) { 
@@ -211,11 +208,7 @@ footer .bottom-area .tel { font-size: 14px; font-weight: 500; letter-spacing: -.
 
     header.m-menu-active .search-btn .m-active  { display: block; }
     header.m-menu-active .m-btn .m-close-btn { display: block; }
-    /* header .mobile { position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; display: block; background: #fff;  } */
-    
     header .mobile-menu { position: relative; background: #fff; width: 100vw;  height: calc(100vh - 50px);  }
-    /* header .mobile .top-group { height: 50px; padding: 0 12px; display: flex; justify-content: space-between;  align-items: center; }
-    header .mobile button { width: 30px; border: 0;  } */
     header .mobile-menu .gnb-group {  padding-left: 16px; padding-top: 32px; }
     header .mobile-menu .gnb-group button { font-size: 22px; color: #333; line-height: 1.9; letter-spacing: -.7px; font-weight: 500; width: auto; display: block;}
     header .mobile-menu .bottom-menu { margin-top: 60px;  padding-left: 16px;  width: 100%; margin-bottom: 50px; }
@@ -223,10 +216,7 @@ footer .bottom-area .tel { font-size: 14px; font-weight: 500; letter-spacing: -.
     header .mobile-menu .sns {  position: absolute;  left: 0; bottom: 0; display: flex; height: 50px; border-top: 1px solid #8d8d8d; width: 100%; padding-top: 5px;  }
     header .mobile-menu .sns a {  width: 38px; height: 38px; background-size: 100% auto; background-repeat: no-repeat; background-position: 0 0; margin-left: 8px; }
     header .mobile-menu .sns a:first-child { margin-left: 3px; padding-left: 0; } 
-    
-    
-    
-
+         
     footer { padding-top: 120px; }    
     footer .wrap { background-color: #f6f5f3; padding: 0; }
     footer .top-area {padding: 32px 12px 50px;}

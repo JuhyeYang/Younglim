@@ -83,107 +83,107 @@ $(document).ready(function () {
 
     })
 
-
-});
-
-
-//sec05 메뉴 클릭시 창이동
-var menu = ['Slide 1', 'Slide 2', 'Slide 3']
-var mySwiper = new Swiper('.sec05 .swiper-container', {
-    // If we need pagination
-    pagination: {
-        el: '.sec05 .swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (menu[index]) + '</span>';
+    
+    //AOS
+    AOS.init();
+    
+    
+    
+    //헤더 드롭 슬라이드
+    var swiper = new Swiper("header .drop-area .product-wrap .swiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
         },
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-})
-
-
-//AOS
-AOS.init();
-
-
-
-//헤더 드롭 슬라이드
-var swiper = new Swiper("header .drop-area .product-wrap .swiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-
-});
-
-
-//메인 배너 슬라이드
-var swiper = new Swiper(".main-banner", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-});
-
-//sec01 슬라이드
-var swiper = new Swiper(".contents", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    // 이미지 사이 간격 조절
-    pagination: {
-        el: ".sec01 .swiper-pagination",
-        type: "progressbar",
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        768: {
-            slidesPerView: 3,  //브라우저가 768보다 클 때
-            spaceBetween: 32,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    
+    });
+    
+    
+    //메인 배너 슬라이드
+    var swiper = new Swiper(".main-banner", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+    
+    //sec01 슬라이드
+    var swiper = new Swiper(".contents", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        // 이미지 사이 간격 조절
+        pagination: {
+            el: ".sec01 .swiper-pagination",
+            type: "progressbar",
         },
 
-    },
-});
-
-
-//sec05 슬라이드
-var swiper = new Swiper(".sec05 .swiper", {
-    slidesPerView: 2.5,
-    spaceBetween: 10,
-    pagination: {
-        el: ".sec05 .swiper-pagination",
-        type: "fraction",
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
-//sec06 슬라이드
-var swiper = new Swiper(".sec06 .swiper", {
-    slidesPerView: 2.8,
-    spaceBetween: 10,
-    breakpoints: {
-        768: {
-            slidesPerView: 3,  //브라우저가 768보다 클 때
-            spaceBetween: 40,
+        breakpoints: {
+            768: {
+                slidesPerView: 3,  //브라우저가 768보다 클 때
+                spaceBetween: 32,
+            },
+        
         },
-    },
+    });
+    
+    
+    //sec05 슬라이드
+    var swiper = new Swiper(".sec05 .swiper", {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        pagination: {
+            el: ".sec05 .swiper-pagination",
+            type: "progressbar",
+        },
+
+    });
+
+    //sec05 메뉴 클릭시 창이동
+    var menu = ['Slide 1', 'Slide 2', 'Slide 3']
+    var mySwiper = new Swiper('.sec05 .swiper-container', {
+        // If we need pagination
+        pagination: {
+            el: '.sec05 .sec05-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (menu[index]) + '</span>';
+            },
+        },
+    })
+        
+
+    //sec05 버튼 마우스오버시 색변경
+    $('main .sec08 .btn').mouseover(function () {
+        $(this).addClass('active')
+    })
+
+    $('main .sec08 .btn').mouseleave(function () {
+        $(this).removeClass('active')
+    })
+
+
+    //sec06 슬라이드
+    var swiper = new Swiper(".sec06 .swiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        breakpoints: {
+            768: {
+                slidesPerView: 3,  //브라우저가 768보다 클 때
+                spaceBetween: 40,
+            },
+        },
+    });
+    
+
+
 });
+
 
