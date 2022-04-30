@@ -144,6 +144,37 @@ footer .bottom-area .tel { font-size: 14px; font-weight: 500; letter-spacing: -.
 .wish-area .btn-box .yes { margin-left: 10px;  background-color: #333; color: #fff;}
 
 
+/* 로그인 창 */
+.login-wrap { position: relative; top: 64px; display: none; } 
+.login-wrap .login-area { padding-top: 90px; width: 400px; margin: 0 auto; text-align: center; } 
+.login-wrap .h2 { font-size: 32px; font-weight: 500; letter-spacing: -1.2px; line-height: 1.46; color: #333; } 
+.login-wrap .input-box { width: 400px; margin: 27px auto 0; } 
+.login-wrap .input-box input { padding: 0 41px 0 14px; width: 100%; height: 54px; display: block; border: 1px solid #c1c1c1; } 
+.login-wrap .input-box input::placeholder { font-size: 16px; font-weight: 300; letter-spacing: -.2px; color: #333; } 
+.login-wrap .input-box input:nth-child(2) { margin-top: 10px; } 
+
+.login-wrap .find-box { margin-top: 10px; display: flex; justify-content: right; } 
+.login-wrap .find-box a { position: relative; color: #707070; font-size: 13px; letter-spacing: -.57px; line-height: 34px; } 
+.login-wrap .find-box .find-pwd::before { content: ""; width: 1px; height: 11px; background-color: #ddd; position: absolute; left: 0; top: 50%; transform: translateY(-50%); } 
+.login-wrap .find-box .find-pwd { padding-left: 7px; margin-left: 7px; } 
+
+.login-wrap .login-box { margin-top: 16px; } 
+.login-wrap .login-box button { width: 100%; font-size: 18px; line-height: 3.22; font-weight: 500; color: #fff; background: #333; } 
+.login-wrap .join-box { font-size: 14px; font-weight: 300; letter-spacing: -.61px; line-height: 34px; color: #707070; padding-top: 2px; text-align: center; } 
+.login-wrap .join-box a { position: relative; margin-left: 6px; padding-bottom: 8px; font-weight: 400; color: #333; } 
+.login-wrap .join-box a::after { content: ""; width: 100%; height: 1px; position: absolute; left: 0; bottom: 6px; background: #333; } 
+
+.login-wrap .other-login-box .divide-box { margin-top: 27px; width: 100%; text-align: center; position: relative; } 
+.login-wrap .other-login-box .divide-box::before { content: ''; left: 0; top: 50%; transform: translateY(-50%); width: 100%; height: 1px; position: absolute; background: #ddd; } 
+.login-wrap .other-login-box span { position: relative; z-index: 2; font-size: 14px; letter-spacing: -.61px; line-height: 2.42; padding: 0 19px; background: #fff; color: #707070; } 
+.login-wrap .other-login-box .btn-group { margin-top: 23px; } 
+.login-wrap .other-login-box button { width: 100%; height: 58px; background-color: #fff; border: 1px solid #c1c1c1; font-size: 18px; font-weight: 500; letter-spacing: -.8px; line-height: 3.11; text-align: center; } 
+.login-wrap .other-login-box .naver-log { color: #3aba21; position: relative; } 
+.login-wrap .other-login-box .naver-log::before { content: ''; background: url(../images/icon-sns-naver.png)no-repeat; width: 40px; height: 40px; position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background-size: cover; } 
+.login-wrap .other-login-box .kakao-log { margin-top: 10px; color: #333; position: relative; } 
+.login-wrap .other-login-box .kakao-log::before { content: ''; background: url(../images/icon-sns-kakao.png); width: 40px; height: 40px; position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background-size: cover; } 
+
+
 /*===========================================================================
     반응형
 ============================================================================*/

@@ -53,6 +53,14 @@ $(document).ready(function () {
         $('.wish-area-bg').hide()
     })
 
+    //헤더 로그인 클릭 시 창 생성
+    $('header nav .login-btn').click(function () {
+        $('.login-wrap').show()
+      
+    })
+
+
+
     // 모바일 헤더 호버시 색상 추가
     $('header').mouseover(function () {
         $('header').addClass('m-active')
