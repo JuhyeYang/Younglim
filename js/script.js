@@ -8,6 +8,16 @@ $(document).ready(function () {
         $('header').removeClass('active')
     })
 
+
+    // // 서브페이지 헤더 오버시 색상 ㅇ추가
+    // $('.sub-header').mouseover(function(){
+    //     if($(this).hasClass('active')){
+    //         $(this).removeClass('active')
+    //     }else {
+    //         $(this).addClass('active');
+    //     }
+    // })
+    
     //헤더 네비 호버시 메뉴 생성
     $('header .top-group .gnb-group li a').mouseover(function () {
         $('header .drop-down-area').slideDown()

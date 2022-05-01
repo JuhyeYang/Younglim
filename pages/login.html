@@ -11,7 +11,156 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+<header class="sub-header">
+    <div class="container">
+        <div class="top-wrap">
+            <div class="top-group">
+                <h1 class="logo">
+                    <a href="">
+                        <img src="../images/icon-younglim-logo-white.png" alt="">
+                        <img src="../images/icon-younglim-logo.png" alt="" class="active">
+                    </a>
+                </h1>
+                <ul class="gnb-group">
+                    <li><a href="">브랜드</a></li>
+                    <li><a href="">제품</a></li>
+                    <li><a href="">인테리어 솔루션</a></li>
+                    <li><a href="">매거진.Y</a></li>
+                    <li><a href="">쇼룸안내</a></li>
+                </ul>
+            </div>
+            <!-- 모바일 nav -->
+            <nav class="nav">
+                <button class="search-btn">
+                    <img src="../images/icon-gnb-search-white.png" alt="">
+                    <img src="../images/icon-gnb-search.png" alt="" class="active">
+                    <img src="..images/icon-gnb-search.png" alt="" class="m-active">
+                </button>
+                <button class="like-btn">
+                    <img src="../images/icon-gnb-like-white.png" alt="">
+                    <img src="../images/icon-gnb-like.png" alt="" class="active">
+                </button>
+                <a href="./pages/login.html" class="login-btn">
+                    <img src="../images/icon-gnb-login-white.png" alt="">
+                    <img src="../images/icon-gnb-login.png" alt="" class="active">
+                </a>
+                <button class="m-btn">
+                    <img src="../images/icon-gnb-menu-white.png" alt="" class="m-menu-btn">
+                    <img src="../images/icon-gnb-menu.png" alt="" class="m-active">
+                    <img src="../images/icon-gnb-menu-close.png" alt="" class="m-close-btn">
+                </button>
+            </nav>
+        </div>
+    </div>
 
+    <!-- pc 메뉴드롭다운 -->
+    <div class="drop-down-area">
+        <div class="container">
+            <div class="product-wrap">
+                <div class="con">
+                    <a href="" class="tit">제품</a>
+                </div>
+                <div class="con">
+                    <a href="">키친/붙박이장</a>
+                    <a href="">바스/타일</a>
+                    <a href="">도어</a>
+                    <a href="">중문</a>
+                    <a href="">창호</a>
+                    <a href="">몰딩/월/마루</a>
+                    <a href="">인테리어필름</a>
+                </div>
+                <div class="con"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/hover-top01.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/hover-top02.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/hover-top03.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="con">
+                    <a href="">e카탈로그</a>
+                    <a href="">최근 본 제품</a>
+                    <div>당신에게 꼭 맞는 스타일을<br>추천해 드립니다.</div>
+                    <div class="img-box">
+                        <img src="../images/gnb-recommend-illust.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pc 서치 드롭다운 -->
+    <div class="search-area">
+        <div class="menu-group">
+            <div class="container">
+                <div class="search-txt">SEARCH</div>
+                <div class="search-wrap">
+                    <div class="search-bar">
+                        <input type="text" placeholder="검색어를 입력해주세요" class="inputfield">
+                    </div>
+                    <ul>
+                        <li class="tit">추천 키워드</li>
+                        <li>이벤트</li>
+                        <li>2021</li>
+                        <li>슬로우위켄드</li>
+                        <li>펫도어</li>
+                        <li>데메테르</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--모바일 서치클릭 -->
+    <div class="mobile-search">
+        <div class="con-group">
+            <div class="search-bar">
+                <input type="text" placeholder="검색어를 입력해주세요">
+            </div>
+            <div class="keyword-group">
+                <div>추천 키워드</div>
+                <button>이벤트</button>
+                <button>2021</button>
+                <button>슬로우위켄드</button>
+                <button>펫도어</button>
+                <button>데메테르</button>
+            </div>
+        </div>
+    </div>
+    <!-- 모바일 메뉴클릭 -->
+    <div class="mobile-menu">
+        <div class="gnb-group">
+            <button>브랜드</button>
+            <button>제품</button>
+            <button>인테리어 솔루션</button>
+            <button>매거진.Y</button>
+            <button>쇼룸 안내</button>
+        </div>
+        <div class="bottom-menu">
+            <a href="">최근 본 제품</a>
+            <a href="">마이페이지</a>
+            <a href="">e카탈로그</a>
+            <a href="">고객센터</a>
+        </div>
+        <div class="sns">
+            <a href="">
+                <img src="../images/icon-gnb-share-01.png" alt="">
+            </a>
+            <a href="./images/icon-gnb-share-02.png">
+                <img src="../images/icon-gnb-share-02.png" alt="">
+            </a>
+            <a href="./images/icon-gnb-share-03.png">
+                <img src="../images/icon-gnb-share-03.png" alt="">
+            </a>
+        </div>
+    </div>
+</header>
 <body>
     <main class="login-wrap">
         <div class="container">
@@ -45,6 +194,90 @@
         </div>
 
     </main>
+    <footer>
+        <div class="wrap">
+            <div class="top-area">
+                <div class="container">
+                    <h2 class="tit">영림 토탈 인테리어</h2>
+                    <div class="menu-group">
+                        <div class="menu">
+                            <a href="">브랜드</a>
+                            <a href="">제품</a>
+                            <a href="">인테리어 솔루션</a>
+                            <a href="">매거진.Y</a>
+                            <a href="">쇼룸 안내</a>
+                        </div>
+                        <div class="menu">
+                            <a href="">대리점 개설문의</a>
+                            <a href="">고객센터</a>
+                            <a href="">A/S접수</a>
+                            <a href="">이용약관</a>
+                            <a href="">개인정보 처리방침</a>
+                            <a href="">회사소개</a>
+                        </div>
+                        <div class="menu">
+                            <a href="">Blog</a>
+                            <a href="">Instagram</a>
+                            <a href="">YouTube</a>
+                            <a href="">영림몰</a>
+                            <a href="">e카탈로그</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-area">
+                <div class="container">
+                    <div class="txt-wrap">
+                        <div class="brand">영림임업(주)</div>
+                        <div class="address">인천광역시 남동구 호구포로 9</div>
+                        <div class="txt-box">
+                            <div class="ceo">대표.김장원</div>
+                            <div>사업자 등록번호 137-81-02411</div>
+                        </div>
+                        <div class="mob txt-box">
+                            <div class="tel">Tel. 1577-5600</div>
+                            <div class="fax">Fax. 032-813-5505</div>
+                        </div>
+                    </div>
+                    <div class="txt-wrap">
+                        <div class="brand">영림화학(주)</div>
+                        <div class="address">인천광역시 서구 북항로 31번길 13</div>
+                        <div class="txt-box">
+                            <div class="ceo">대표.황복현</div>
+                            <div>사업자 등록번호 137-81-40827</div>
+                        </div>
+                        <div class="mob txt-box">
+                            <div class="tel">Tel. 1577-5600</div>
+                            <div class="fax">Fax. 032-578-4455</div>
+                        </div>
+                    </div>
+                    <div class="txt-wrap">
+                        <div class="brand">영림산업(주)</div>
+                        <div class="address">인천광역시 남동구 앵고개로 584</div>
+                        <div class="txt-box">
+                            <div class="ceo">대표.황복현</div>
+                            <div>사업자 등록번호 131-86-10859</div>
+                        </div>
+                        <div class="mob txt-box">
+                            <div class="tel">Tel. 1577-5600</div>
+                            <div class="fax">Fax. 032-812-5501</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-area">
+            <div class="container">
+                <div class="copy">
+                    <img src="./images/icon-footer-copy.png" alt class="pc">
+                    <img src="./images/icon-footer-copy-white.png" alt class="mobile">
+                    YOUNGLIM
+                </div>
+                <div class="tel">고객센터 1577-5600</div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
